@@ -37,10 +37,20 @@ body {
   margin: 10px 0;
 }
 
-.search-btn, .location-btn {
+.search-btn {
   width: 100%;
   padding: 10px;
   background-color: #4e7df0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.location-btn{
+  width: 100%;
+  padding: 10px;
+  background-color: #6c6e71;
   color: white;
   border: none;
   cursor: pointer;
@@ -97,7 +107,7 @@ body {
 }
 
 .card {
-  background-color: #444;
+  background-color: #48494a;
   color: white;
   padding: 15px;
   border-radius: 6px;
