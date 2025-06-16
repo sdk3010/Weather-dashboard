@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="title">Weather Dashboard</h1>
+    
+    <div class="main">
+      <div class="left-panel">
+        <label>Enter a City Name</label>
+        <input id="cityInput" type="text" placeholder="E.g., New York, London, Tokyo" />
+        <button class="search-btn" onclick="searchWeather()">Search</button>
+        
+        <div class="divider">
+          <hr><span>or</span><hr>
+        </div>
+        <button class="location-btn" onclick="getWeatherByLocation()">Use Current Location</button>
+        <div id="history"></div>
+      </div>
+
+      <div class="right-panel">
+        <div class="current-weather">
+          <div class="weather-left" id="currentWeather"></div>
+          <div class="weather-right">
+            <img id="weatherIcon" src="" alt="Weather Icon" />
+            <p id="description"></p>
+          </div>
+        </div>
+
+        <h3 class="forecast-title">4-Day Forecast</h3>
+        <div id="forecast" class="forecast"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
