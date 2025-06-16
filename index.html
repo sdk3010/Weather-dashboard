@@ -13,12 +13,12 @@
       <div class="left-panel">
         <label>Enter a City Name</label>
         <input id="cityInput" type="text" placeholder="E.g., New York, London, Tokyo" />
-        <button class="search-btn" onclick="fetchWeather()">Search</button>
+        <button class="search-btn" onclick="handleSearch()">Search</button>
         
         <div class="divider">
           <hr><span>or</span><hr>
         </div>
-        <button class="location-btn" onclick="getWeatherByLocation()">Use Current Location</button>
+        <button class="location-btn" onclick="fetchWeatherByLocation()">Use Current Location</button>
         <div id="history"></div>
       </div>
 
